@@ -17,12 +17,9 @@ const CreateVault: React.FC = () => {
     setLoading(true);
 
     try {
-      const response = await fetch(
-        `http://159.65.155.220/predict?image_url=${imageLink}`,
-        {
-          method: "POST",
-        }
-      );
+      const response = await fetch(`/api?image_url=${imageLink}`, {
+        method: "POST",
+      });
 
       if (!response.ok) {
         throw new Error("Failed to process the image.");
