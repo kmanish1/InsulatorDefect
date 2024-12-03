@@ -29,7 +29,7 @@ const CreateVault: React.FC = () => {
       }
 
       const data = await response.json();
-      setOutputImage(data.outputImageUrl);
+      setOutputImage(data.cloudinary_url);
     } catch (error) {
       console.error("Error:", error);
       alert("An error occurred. Please try again.");
