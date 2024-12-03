@@ -13,7 +13,7 @@ export const Hero: React.FC = () => {
         </p>
         <div className="space-x-4">
           <Link
-            href="/create-vault"
+            href="/predict"
             className="hover:text-navy-600 dark:hover:dark:text-gray-100 transition"
           >
             Upload Image

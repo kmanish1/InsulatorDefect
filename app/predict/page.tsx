@@ -18,7 +18,7 @@ const CreateVault: React.FC = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:8000?image=${encodeURIComponent(imageLink)}`,
+        `http://159.65.155.220/predict?image_url=${imageLink}`,
         {
           method: "POST",
         }
@@ -40,7 +40,7 @@ const CreateVault: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <h1 className="text-2xl font-bold mb-6">Upload Image for Detection</h1>
+      <h1 className="text-2xl font-bold m-6">Upload Image for Detection</h1>
       <form
         className="flex flex-col items-center bg-white p-6 rounded shadow-md"
         onSubmit={handleSubmit}
@@ -72,6 +72,7 @@ const CreateVault: React.FC = () => {
             src={outputImage}
             alt="Processed Output"
             className="max-w-full rounded border"
+            width={700}
           />
         </div>
       )}

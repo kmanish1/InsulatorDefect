@@ -26,7 +26,7 @@ export const Navbar: React.FC = () => {
             Home
           </Link>
           <Link
-            href="/create-vault"
+            href="/predict"
             className="hover:text-navy-600 dark:hover:dark:text-gray-100 transition"
           >
             Upload Image
